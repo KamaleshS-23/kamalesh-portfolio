@@ -15,7 +15,7 @@ export default function About() {
           About Me
         </h2>
         <p className="text-lg leading-relaxed text-blue-100 mb-4">
-          I'm a passionate developer specialized in AI, full-stack web, Java, and mobile technologies.
+          I&#39;m a passionate developer specialized in AI, full-stack web, Java, and mobile technologies.
         </p>
         <p className="text-lg leading-relaxed text-blue-100">
           I completed the Infosys Springboard AI Internship with 19 certifications across NLP, Computer Vision, GPT Models, and more.

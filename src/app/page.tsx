@@ -23,8 +23,9 @@ export default function Home() {
           transition={{ duration: 1 }}
           className="text-5xl md:text-6xl font-extrabold bg-gradient-to-r from-blue-400 via-rose-400 to-blue-300 text-transparent bg-clip-text drop-shadow-md"
         >
-          Hi, I'm Kamalesh 👋
-        </motion.h1>
+      Hi, I&#39;m Kamalesh 👋
+      </motion.h1>
+
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

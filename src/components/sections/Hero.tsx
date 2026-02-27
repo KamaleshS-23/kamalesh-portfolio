@@ -86,7 +86,7 @@ export default function Hero() {
               </a>
               
               <a
-                href="/resume.pdf"
+                href="/image/resume.png"
                 className="group px-8 py-4 rounded-xl border-2 border-coral dark:border-cyan-glow text-coral dark:text-cyan-glow font-medium hover:bg-coral/10 dark:hover:bg-cyan-glow/10 transition-all duration-300"
               >
                 <span className="flex items-center justify-center gap-2">
@@ -96,7 +96,7 @@ export default function Hero() {
               </a>
 
               <a
-                href="/resume.pdf"
+                href="/image/resume.png"
                 download
                 className="group px-8 py-4 rounded-xl border-2 border-coral dark:border-cyan-glow text-coral dark:text-cyan-glow font-medium hover:bg-coral/10 dark:hover:bg-cyan-glow/10 transition-all duration-300"
               >
@@ -139,7 +139,7 @@ export default function Hero() {
               {/* Avatar Image */}
               <div className="relative w-full h-full rounded-full overflow-hidden border-8 border-white dark:border-midnight-blue shadow-2xl">
                 <Image
-                  src="/image/profile.jpg"
+                  src="/image/profile.jpeg"
                   alt="Kamalesh"
                   fill
                   className="object-cover"

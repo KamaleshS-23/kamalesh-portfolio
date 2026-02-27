@@ -8,44 +8,182 @@ import Image from 'next/image'
 export const projectsData = [
   {
     id: 1,
-    title: "Portfolio Website",
-    description: "A modern personal portfolio built using Next.js & Tailwind CSS.",
-    technologies: ["Next.js", "React", "Tailwind", "TypeScript"],
+    title: "Modern Portfolio Website",
+    description: "Personal portfolio website with modern design, animations, and dark mode support.",
+    technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion"],
     features: [
       "Responsive design",
-      "Dark/Light mode",
-      "Smooth animations",
-      "Modular component structure"
+      "Dark/Light mode toggle",
+      "Smooth Framer Motion animations",
+      "Modular component structure",
+      "Project showcase with filtering"
     ],
     github: "https://github.com/yourusername/portfolio",
-    live: "https://yourwebsite.com"
-  },
-  {
+    live: "https://yourportfolio.com"
+  },{
     id: 2,
-    title: "E-Commerce App",
-    description: "Full-stack shopping platform with authentication & cart system.",
-    technologies: ["React", "Node.js", "MongoDB"],
+    title: "Intelligent Leaf Disease Prediction & Pesticide Sprinkler System",
+    description: "Smart India Hackathon Participant - AI-powered agricultural solution for plant disease detection and automated treatment.",
+    technologies: ["Python", "CNN", "TensorFlow", "ESP32", "Servo Motor", "Relays"],
     features: [
-      "JWT Authentication",
-      "Product filtering",
-      "Stripe payments"
+      "CNN model for plant leaf disease detection from images",
+      "Real-time disease prediction with high accuracy",
+      "Automated pesticide sprinkler system integration",
+      "ESP32-based hardware control with servo motors and relays"
     ],
-    github: "https://github.com/yourusername/ecommerce",
-    live: "https://ecommerce-demo.com"
+    github: "https://github.com/yourusername/leaf-disease-prediction",
+    live: "https://leaf-disease-demo.com"
   },
   {
     id: 3,
-    title: "Weather Dashboard",
-    description: "Real-time weather dashboard using OpenWeather API.",
-    technologies: ["Next.js", "API", "Tailwind"],
+    title: "E-Learning Platform",
+    description: "Comprehensive online learning management system with course creation, student enrollment, and progress tracking features.",
+    technologies: ["React", "Node.js", "MongoDB", "Express", "JWT", "Cloudinary"],
     features: [
-      "Live weather updates",
-      "Search by city",
-      "Custom UI visualizations"
+      "Course creation and management for instructors",
+      "Video lesson streaming with Cloudinary integration",
+      "Student enrollment and progress tracking",
+      "Interactive quizzes and assignments",
+      "Discussion forums for each course",
+      "Certificate generation upon completion"
     ],
-    github: "https://github.com/yourusername/weather-app",
-    live: "https://weather-demo.com"
-  }
+    github: "https://github.com/yourusername/elearning-platform",
+    live: "https://elearning-platform-demo.com"
+  },
+  {
+    id: 4,
+    title: "Skill Bridge & CareerForge - AI Career Platform",
+    description: "AI-Powered Career Development Platform with comprehensive skill analysis and career guidance tools.",
+    technologies: ["HTML", "CSS", "JavaScript", "Django", "Python", "AI/ML"],
+    features: [
+      "Skill profiling and gap analysis",
+      "Internship matching algorithm",
+      "ATS resume builder with optimization",
+      "Personalized career roadmaps",
+      "Technical assessments and mock interviews",
+      "Analytics dashboard for progress tracking"
+    ],
+    github: "https://github.com/yourusername/skillbridge",
+    live: "https://skillbridge-demo.com"
+  },
+  {
+    id: 5,
+    title: "Chatbot World - Multi-Purpose AI Assistant",
+    description: "Comprehensive chatbot suite featuring HR assistant, symptom checker, language translator, and food recommendation system.",
+    technologies: ["HTML", "CSS", "JavaScript", "Python", "NLP", "APIs"],
+    features: [
+      "HR chatbot for employee queries",
+      "Symptom checker for health assistance",
+      "Multi-language translation support",
+      "Food suggestion chatbot with preferences",
+      "Natural language processing integration"
+    ],
+    github: "https://github.com/yourusername/chatbot-world",
+    live: "https://chatbot-world-demo.com"
+  },
+  {
+    id: 6,
+    title: "Smart Dustbin – IoT Waste Monitoring System",
+    description: "IoT-enabled smart waste management system with real-time monitoring and web interface.",
+    technologies: ["Arduino", "Ultrasonic Sensor", "Embedded C", "IoT", "Web Interface"],
+    features: [
+      "Real-time garbage level monitoring",
+      "Ultrasonic sensor integration",
+      "Web-based status dashboard",
+      "Automated alerts for bin full status"
+    ],
+    github: "https://github.com/yourusername/smart-dustbin",
+    live: "https://smart-dustbin-demo.com"
+  },
+  {
+    id: 7,
+    title: "AI-Powered Restaurant Management Website",
+    description: "Intelligent restaurant management system with AI features and JSON-based data management.",
+    technologies: ["HTML", "CSS", "JavaScript", "JSON", "AI Integration"],
+    features: [
+      "Restaurant menu management",
+      "AI-powered recommendations",
+      "JSON-based data persistence",
+      "Responsive user interface"
+    ],
+    github: "https://github.com/yourusername/ai-restaurant",
+    live: "https://ai-restaurant-demo.com"
+  },
+  {
+    id: 8,
+    title: "Java Chat Application",
+    description: "Desktop chat application built with Java Swing, featuring real-time messaging and database integration.",
+    technologies: ["Java", "Swing", "MySQL", "JDBC", "Socket Programming"],
+    features: [
+      "Real-time messaging",
+      "MySQL database integration",
+      "User authentication system",
+      "Contact list management",
+      "Message history storage"
+    ],
+    github: "https://github.com/yourusername/java-chat-app",
+    live: "https://github.com/yourusername/java-chat-app"
+  },
+  {
+    id: 9,
+    title: "Clinic Appointment Management App",
+    description: "Cross-platform mobile app for managing clinic appointments with Firebase backend.",
+    technologies: ["Flutter", "Dart", "Firebase", "Mobile Development"],
+    features: [
+      "Appointment scheduling system",
+      "Patient records management",
+      "Firebase authentication",
+      "Real-time database updates",
+      "Push notifications"
+    ],
+    github: "https://github.com/yourusername/clinic-app",
+    live: "https://clinic-app-demo.com"
+  },
+  {
+    id: 10,
+    title: "Food & Stay Finder Web App",
+    description: "Location-based service finder using Leaflet.js and OpenStreetMap Overpass API.",
+    technologies: ["HTML", "CSS", "JavaScript", "Leaflet.js", "Overpass API"],
+    features: [
+      "Interactive map integration",
+      "Location-based restaurant search",
+      "Accommodation finder",
+      "Real-time data from Overpass API",
+      "Custom markers and popups"
+    ],
+    github: "https://github.com/yourusername/food-stay-finder",
+    live: "https://food-stay-finder.com"
+  },
+  {
+    id: 11,
+    title: "Flutter Contact Manager App",
+    description: "Feature-rich contact management application built with Flutter for cross-platform compatibility.",
+    technologies: ["Flutter", "Dart", "Mobile Development", "Local Storage"],
+    features: [
+      "Contact CRUD operations",
+      "Search and filter functionality",
+      "Profile pictures support",
+      "Import/export contacts",
+      "Call and message integration"
+    ],
+    github: "https://github.com/yourusername/contact-manager",
+    live: "https://contact-manager-demo.com"
+  },
+  {
+    id: 12,
+    title: "Library Management System",
+    description: "Comprehensive library management solution with dual implementation in Java and PHP.",
+    technologies: ["Java", "PHP", "MySQL", "Web Technologies"],
+    features: [
+      "Book catalog management",
+      "Member registration system",
+      "Borrow/return tracking",
+      "Fine calculation",
+      "Search and filter options"
+    ],
+    github: "https://github.com/yourusername/library-system",
+    live: "https://library-system-demo.com"
+  },
 ]
 
 const categories = ['All', 'Full Stack', 'Frontend', 'Backend', 'React']
@@ -198,7 +336,7 @@ export default function Projects() {
                     <span className="ml-2 text-sm text-gray-600 dark:text-gray-400">4.8</span>
                   </div>
                   <div className="text-sm text-gray-500 dark:text-gray-400">
-                    {Math.floor(Math.random() * 100) + 50} stars
+                    {50 + ((project.id * 17) % 100)} stars
                   </div>
                 </div>
               </div>

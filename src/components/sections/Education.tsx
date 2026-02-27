@@ -10,7 +10,7 @@ const educationData = [
     school: 'Sona College of Technology',
     year: '2023 – 2027',
     location: 'Salem, India',
-    gpa: '8.61 CGPA',
+    gpa: '8.51 CGPA',
     description:
       'Currently pursuing Bachelor of Engineering in Computer Science and Engineering. Focused on software development, algorithms, data structures, and modern web technologies.',
     courses: [

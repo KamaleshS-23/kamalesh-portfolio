@@ -6,72 +6,27 @@ import { Calendar, MapPin, Building, Briefcase, Code } from 'lucide-react'
 const internshipData = [
   {
     id: 1,
-    role: 'Full Stack Developer Intern',
-    company: 'TechCorp Solutions',
-    duration: 'June 2024 – August 2024',
-    location: 'Bangalore, India',
+    role: 'AI & Data Analytics Intern',
+    company: 'AICTE + Edunet Foundation (Green Skills)',
+    duration: 'Dec 2024 – Jan 2025',
+    location: 'India',
     type: 'Remote',
     description:
-      'Developed and maintained full-stack web applications using React, Node.js, and MongoDB. Collaborated with senior developers on agile development processes and implemented responsive UI components.',
-    technologies: [
-      'React',
-      'Node.js',
-      'MongoDB',
-      'Express.js',
-      'Tailwind CSS',
-      'Git'
-    ],
-    achievements: [
-      'Built 3+ responsive web applications',
-      'Improved application performance by 40%',
-      'Collaborated with cross-functional teams'
-    ]
-  },
-  {
-    id: 2,
-    role: 'Frontend Developer Intern',
-    company: 'StartupXYZ',
-    duration: 'January 2024 – March 2024',
-    location: 'Chennai, India',
-    type: 'On-site',
-    description:
-      'Worked on frontend development using modern JavaScript frameworks. Implemented user interfaces, optimized performance, and participated in code reviews and team meetings.',
-    technologies: [
-      'JavaScript',
-      'React',
-      'CSS3',
-      'HTML5',
-      'Figma',
-      'GitHub'
-    ],
-    achievements: [
-      'Developed pixel-perfect UI components',
-      'Reduced bundle size by 25%',
-      'Mentored junior interns'
-    ]
-  },
-  {
-    id: 3,
-    role: 'Software Engineering Intern',
-    company: 'InnovateLabs',
-    duration: 'May 2023 – July 2023',
-    location: 'Hyderabad, India',
-    type: 'Hybrid',
-    description:
-      'Contributed to backend development and API design. Learned about microservices architecture, database optimization, and deployment pipelines.',
+      'Completed a 4-week internship focused on Artificial Intelligence and Data Analytics. Gained hands-on experience with Python, NLP, and JSON-based chatbot development. Worked on real-world data problems and built solutions using AI tools and techniques.',
     technologies: [
       'Python',
-      'Django',
-      'PostgreSQL',
-      'Docker',
-      'AWS',
-      'Jenkins'
+      'NLP',
+      'JSON',
+      'AI',
+      'Data Analytics',
+      'Chatbot Development'
     ],
     achievements: [
-      'Designed and implemented REST APIs',
-      'Automated deployment processes',
-      'Improved database query performance'
-    ]
+      'Completed 4-week AI and Data Analytics internship',
+      'Developed JSON-based chatbot solutions',
+      'Applied NLP techniques to real-world data problems'
+    ],
+    project: 'Disease Prediction Chatbot'
   }
 ]
 
@@ -150,6 +105,14 @@ export default function Internship() {
                     </div>
                   </div>
                 </div>
+
+                {/* Project Title */}
+                {internship.project && (
+                  <div className="mb-4 p-3 bg-gray-700/50 rounded-lg border border-gray-600">
+                    <p className="text-sm text-gray-400">Project:</p>
+                    <p className="text-lg font-semibold text-white">{internship.project}</p>
+                  </div>
+                )}
 
                 {/* Description */}
                 <p className="text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">

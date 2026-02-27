@@ -55,6 +55,16 @@ export default function Interests() {
   }, [])
   const [hoveredInterest, setHoveredInterest] = useState<number | null>(null)
 
+  const getProgressPercent = (key: string) => {
+    // Deterministic "random-looking" percent to avoid SSR/CSR hydration mismatches
+    // Range: 70-99
+    let hash = 0
+    for (let i = 0; i < key.length; i++) {
+      hash = (hash * 31 + key.charCodeAt(i)) >>> 0
+    }
+    return 70 + (hash % 30)
+  }
+
   return (
     <section id="interests" className="py-20 bg-gray-50 dark:bg-gray-900/50">
       <div className="container mx-auto px-4">
@@ -69,6 +79,7 @@ export default function Interests() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {interestsData.map((interest, index) => {
             const Icon = interestIcons[interest.icon as keyof typeof interestIcons] || Globe
+            const progress = getProgressPercent(interest.title)
             return (
               <div
                 key={index}
@@ -104,7 +115,7 @@ export default function Interests() {
                   <div className="flex justify-between text-sm">
                     <span className="text-gray-500 dark:text-gray-400">Learning Progress</span>
                     <span className="font-medium text-blue-600 dark:text-blue-400">
-                      {Math.floor(Math.random() * 30 + 70)}%
+                      {progress}%
                     </span>
                   </div>
                   <div className="h-2 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
@@ -114,7 +125,7 @@ export default function Interests() {
                         index % 3 === 1 ? 'bg-green-500' :
                         'bg-purple-500'
                       }`}
-                      style={{ width: `${Math.floor(Math.random() * 30 + 70)}%` }}
+                      style={{ width: `${progress}%` }}
                     ></div>
                   </div>
                 </div>
